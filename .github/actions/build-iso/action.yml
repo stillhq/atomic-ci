@@ -83,6 +83,7 @@ runs:
         use-librepo: ${{ inputs.use_librepo }}
         config-file: ${{ inputs.config-file }}
         platform: linux/${{ inputs.platform }}
+        bootc-image-builder-image: ghcr.io/pizzalovingnerd/bootc-image-builder:latest
 
     - name: Rename ISO
       id: rename
